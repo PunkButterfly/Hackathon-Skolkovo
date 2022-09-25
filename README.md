@@ -1,18 +1,30 @@
-# Решение задачи от команды **Punk Butterfly** :moyai:
+# Skolkovo 2022. Трек от FriendWork :moyai:
+
+## Задача
+
+[Задача](https://codenrock.com/contests/skolkovo-hack-2022#/info) ранжирования соответствия пула кандидатов предлагаемой вакансии.  
+
+
+## Данные
+
+- [Диск](https://drive.google.com/drive/folders/10F0gjEGF_46Sr1Ck5hvORo1wT3xdKO24?usp=sharing) с исходными данными;  
+
 
 ## Результаты
 
-- [Директория с предиктами для тестов](https://git.codenrock.com/skolkovo-hack-2022/cnrprod-team-24259/friend-work-task/-/tree/main/data/result);  
-- [Презентация](https://git.codenrock.com/skolkovo-hack-2022/cnrprod-team-24259/friend-work-task/-/blob/main/%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F_Punk_Butterfly.pdf).  
+- [Предикты](https://drive.google.com/drive/folders/10nSRddXjc61tMGTSaeIOIx_VzqU00v6K?usp=sharing) для тестов;  
+- [Презентация](https://github.com/PunkButterfly/hackathon-skolkovo2022/blob/main/presentation.pdf).  
 
 
 ## Web-сервис
-[Веб-сервис](https://kealfeyne-skolkovo-deploy-info-poggx6.streamlitapp.com/Match)  
+
+[Веб-сервис](https://kealfeyne-skolkovo-deploy-info-poggx6.streamlitapp.com/Info)  
  * _Match_ - страница, на которой вводятся данные о кандидате и вакансии. После нажатия кнопки **Predict** выводится score соответствия кандидата вакансии;  
- * _Upload_ _csv_ - страница, на которую загружаются 4 .csv файла, соответствующих тестовым. После нажатия на **Predict** начинает билдиться архив с файлами типа results_job(список ранжированных кандидатов для каждой вакансии из файла jobs).
+ * _Upload_ _csv_ - страница, на которую загружаются 4 .csv файла, соответствующих тестовым. После нажатия на **Predict** начинает билдиться архив с файлами типа results_job (список ранжированных кандидатов для каждой вакансии из файла jobs).
+
+
 ## Обзор файлов
 
-- [Plots.ipynb](https://git.codenrock.com/skolkovo-hack-2022/cnrprod-team-24259/friend-work-task/-/blob/main/Plots.ipynb) - первичное исследование данных;  
-- [preprocessing_data.ipynb](https://git.codenrock.com/skolkovo-hack-2022/cnrprod-team-24259/friend-work-task/-/blob/main/preprocessing_data.ipynb) - обработка сырых данных перед обучением модели и предиктом;  
-- [train_notebook.ipynb](https://git.codenrock.com/skolkovo-hack-2022/cnrprod-team-24259/friend-work-task/-/blob/main/train_notebook.ipynb) - построение и обучение модели;  
-- [preprocess_data.csv](https://git.codenrock.com/skolkovo-hack-2022/cnrprod-team-24259/friend-work-task/-/blob/main/preprocess_data.csv) - обработанные данные для обучения.
+- [data_analysis](https://github.com/PunkButterfly/hackathon-skolkovo2022/blob/main/data_analysis.ipynb) - первичное исследование данных;  
+- [data_preprocessing.ipynb](https://github.com/PunkButterfly/hackathon-skolkovo2022/blob/main/data_preprocessing.ipynb) - обработка сырых данных перед обучением модели и предиктом;  
+- [train_notebook.ipynb](https://github.com/PunkButterfly/hackathon-skolkovo2022/blob/main/train_notebook.ipynb) - построение и обучение модели.  
