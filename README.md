@@ -1,4 +1,4 @@
-# Skolkovo 2022. Трек от FriendWork :moyai:
+# Мы - победители Skolkovo 2022 в треке от FriendWork  :moyai:
 
 ## Задача
 ### Кейс   
@@ -51,7 +51,7 @@
 
 ## Web-сервис
 
-[Веб-сервис](https://kealfeyne-skolkovo-deploy-info-poggx6.streamlitapp.com/Info)  
+[Веб-сервис](https://punkbutterfly-hackathon-skolkovo-appinfo-v9i24y.streamlitapp.com/)  
  * _Match_ - страница, на которой вводятся данные о кандидате и вакансии. После нажатия кнопки **Predict** выводится score соответствия кандидата вакансии;  
  * _Upload_ _csv_ - страница, на которую загружаются 4 .csv файла, соответствующих тестовым. После нажатия на **Predict** начинает билдиться архив с файлами типа results_job (список ранжированных кандидатов для каждой вакансии из файла jobs).
 
@@ -60,4 +60,5 @@
 
 - [data_analysis](https://github.com/PunkButterfly/hackathon-skolkovo2022/blob/main/data_analysis.ipynb) - первичное исследование данных;  
 - [data_preprocessing.ipynb](https://github.com/PunkButterfly/hackathon-skolkovo2022/blob/main/data_preprocessing.ipynb) - обработка сырых данных перед обучением модели и предиктом;  
-- [train_notebook.ipynb](https://github.com/PunkButterfly/hackathon-skolkovo2022/blob/main/train_notebook.ipynb) - построение и обучение модели.  
+- [train_notebook.ipynb](https://github.com/PunkButterfly/hackathon-skolkovo2022/blob/main/train_notebook.ipynb) - построение и обучение модели;  
+- [/app](https://github.com/PunkButterfly/Hackathon-Skolkovo/tree/main/app) - папка с Web-разверткой модели и скриптами обработки данных.
