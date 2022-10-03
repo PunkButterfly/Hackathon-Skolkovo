@@ -82,6 +82,6 @@ with footer3:
         processed_data = pr.process(preprocessed_data[0], preprocessed_data[1],
                                     preprocessed_data[2], preprocessed_data[3])
 
-        result = prediction.inference('fully_model.pt', processed_data.loc[0, :], bert_tokenizer, bert_model)
+        result = prediction.inference('app/fully_model.pt', processed_data.loc[0, :], bert_tokenizer, bert_model)
         st.write(f'Time spent: {time() - time_start}')
 st.success(f'Score: {result}')
