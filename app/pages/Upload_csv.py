@@ -38,7 +38,7 @@ if (job is not None) and (candidates is not None) and\
                                         candidates, candidates_education, candidates_workplaces)
             for candidate_index in range(0, candidates.shape[0]):
 
-                result = prediction.inference('fully_model.pt', processed_data.loc[candidate_index, :],
+                result = prediction.inference('app/fully_model.pt', processed_data.loc[candidate_index, :],
                                               bert_tokenizer, bert_model)
                 jobs_results[job_index] = jobs_results[job_index].append(pd.DataFrame(
                     [[candidates['CandidateId'][candidate_index], result]], columns=['CandidateID', 'Score']),
